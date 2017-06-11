@@ -10,7 +10,7 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
 * Register the component with Vue automatically when included, if needed.
 * Stable version.
 * Not minified.
-* Put it into the "components" folder as "<component-name>.js".
+* Put it into the "components" folder as "_component-name_.js".
 * Add it into this README.md as one line.
 * Minimum dependencies.
 * State all dependencies as comma-separated names from this list in square brackets after your description.
