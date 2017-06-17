@@ -11,6 +11,8 @@ Vue.component('vs-crumbs',
 				'<span class=last v-else style="cursor:default">{{ crumb.name }}</span>' +
 			'</li></ul>',
 
+	style: 'a:after{padding:0 8px; content:"/"} .last{opacity:0.66}',
+	
 	props: { root: String },
 
 	computed:
