@@ -37,6 +37,7 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
 ### Forms
 
  - [vue-form](https://github.com/fergaldoyle/vue-form) - Comprehensive form validation.
+ - [vue-the-mask](https://github.com/vuejs-tips/vue-the-mask) - A lightweight and dependency-free mask input.
 
 ### Progress
 

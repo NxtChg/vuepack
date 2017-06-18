@@ -5,13 +5,6 @@
 Math.log10 = Math.log10 || function(x){ return Math.log(x) * Math.LOG10E; };
 //_____________________________________________________________________________
 
-var s = document.createElement("style"); s.type = 'text/css'; // add spinner keyframes
-
-document.getElementsByTagName('head')[0].appendChild(s);
-
-s.sheet.insertRule('@keyframes spin { 100% { transform: rotate(360deg); } }', 0);
-//_____________________________________________________________________________
-
 Vue.component('vue-submit',
 {
 	template:
@@ -20,6 +13,8 @@ Vue.component('vue-submit',
 			'<span class="spinner"  :style="spn_style" v-if="in_progress"></span>' +
 			'<div  class="progress" :style="bar_style" v-if="in_progress"></div>' +
 		'</button>',
+
+	style: '@keyframes vue-submit-spin { 100% { transform: rotate(360deg); } }',
 
 	props:{ progress: Number, autoProgress: Number, disabled: Boolean },
 
@@ -66,7 +61,7 @@ Vue.component('vue-submit',
 		{
 			return{ position: 'relative', border: '3.5px solid rgba(255,255,255,0.5)', borderRightColor: '#fff', borderRadius: '50%', display: 'inline-block',
 					width: '1.33em', height: '1.33em', zIndex: 2, marginLeft:'6px', verticalAlign: 'text-top', top: '-1px',
-					animation: 'spin 0.75s linear', animationIterationCount: 'infinite', // background: 'url("loading.gif") center center no-repeat'
+					animation: 'vue-submit-spin 0.75s linear', animationIterationCount: 'infinite', // background: 'url("loading.gif") center center no-repeat'
 			};
 		}
     },
