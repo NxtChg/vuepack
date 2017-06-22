@@ -38,7 +38,7 @@ Vue.component('avatar',
 				s.backgroundColor = this.background;
 				s.font       = Math.floor(this.size / 2.5) + 'px/100px Helvetica, Arial, sans-serif';
 				s.fontWeight = 'bold';
-				s.color      = this.color || this.lighten(this.background, this.lighten);
+				s.color      = this.color || this.lighten_it(this.background, this.lighten);
 				s.lineHeight = (this.size + Math.floor(this.size / 20)) + 'px';
 			}
 
@@ -65,7 +65,7 @@ Vue.component('avatar',
 	
 		pick_bg_color: function(seed, colors){ return colors[seed % colors.length]; },
 	
-		lighten: function(hex, amt) // From https://css-tricks.com/snippets/javascript/lighten-darken-color/
+		lighten_it: function(hex, amt) // From https://css-tricks.com/snippets/javascript/lighten-darken-color/
 		{
 			var usePound = false;
 			
