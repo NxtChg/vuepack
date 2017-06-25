@@ -47,6 +47,11 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
 
  - [vue-submit](https://github.com/NxtChg/pieces/tree/master/js/vue/vue-submit) - Button with a progress bar (Ladda) in less than 90 lines of code with no dependencies.
 
+### Scroll
+
+ - [vue-chat-scroll](https://github.com/theomessin/vue-chat-scroll) - Automatic scroll-to-bottom directive.
+ - [vuebar](https://github.com/DominikSerafin/vuebar) - Vue 2 directive for custom scrollbar that uses native scroll behavior.
+
 ### Time & Date
 
  - [vue-timeago](https://github.com/egoist/vue-timeago) - A tiny timeago component.
@@ -64,5 +69,4 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
 ### Miscellaneous
 
  - [vue-avatar](https://github.com/eliep/vue-avatar) - An avatar component that displays user initials or an image.
- - [vuebar](https://github.com/DominikSerafin/vuebar) - Vue 2 directive for custom scrollbar that uses native scroll behavior.
  - [vue-social-sharing](https://github.com/nicolasbeauvais/vue-social-sharing) - A component for sharing links on social networks.
