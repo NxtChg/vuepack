@@ -64,4 +64,5 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
 ### Miscellaneous
 
  - [vue-avatar](https://github.com/eliep/vue-avatar) - An avatar component that displays user initials or an image.
+ - [vuebar](https://github.com/DominikSerafin/vuebar) - Vue 2 directive for custom scrollbar that uses native scroll behavior.
  - [vue-social-sharing](https://github.com/nicolasbeauvais/vue-social-sharing) - A component for sharing links on social networks.
