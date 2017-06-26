@@ -50,6 +50,7 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
 ### Scroll
 
  - [vue-chat-scroll](https://github.com/theomessin/vue-chat-scroll) - Automatic scroll-to-bottom directive.
+ - [vue-scrollto](https://github.com/rigor789/vue-scrollTo) - A directive that listens for click events and scrolls to elements.
  - [vuebar](https://github.com/DominikSerafin/vuebar) - Vue 2 directive for custom scrollbar that uses native scroll behavior.
 
 ### Time & Date
