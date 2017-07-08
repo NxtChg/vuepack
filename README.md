@@ -53,6 +53,10 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
  - [vue-scrollto](https://github.com/rigor789/vue-scrollTo) - A directive that listens for click events and scrolls to elements.
  - [vuebar](https://github.com/DominikSerafin/vuebar) - Vue 2 directive for custom scrollbar that uses native scroll behavior.
 
+### Drag-n-drop
+
+ - [dnd-grid](https://github.com/dattn/dnd-grid) - A powerful grid with draggable and resizable boxes.
+
 ### Time & Date
 
  - [vue-timeago](https://github.com/egoist/vue-timeago) - A tiny timeago component.
