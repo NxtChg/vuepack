@@ -86,7 +86,7 @@ Vue.component('dnd-grid-box',
 
 	style:
 		'.dnd-grid-box{ position:absolute; z-index:1; box-sizing:border-box; }'+
-		'.dnd-grid-box.dragging, .dnd-grid-box.resizing{ z-index:2; }'+
+		'.dnd-grid-box.dragging, .dnd-grid-box.resizing{ z-index:2; opacity:0.7 }'+
 		'.dnd-grid-box:not(.dragging):not(.resizing){ transition: top ease-out 0.1s, left ease-out 0.1s, width ease-out 0.1s, height ease-out 0.1s; }'+
 		'.resize-handle{ position:absolute; right:-5px; bottom:-5px; width:15px; height:15px; cursor:se-resize; }',
 	
@@ -282,7 +282,9 @@ Vue.component('dnd-grid-container',
 				x: Math.round(x / (this.gridSize.w + this.margin)),
 				y: Math.round(y / (this.gridSize.h + this.margin))
 			}
-		}
+		},
+
+		updateLayout: function(layout){ this.$emit('update:layout', layout); }
 	},
 
 	mounted: function()
@@ -342,8 +344,7 @@ Vue.component('dnd-grid-container',
 					newLayout.push(dnd_moveToFreePlace(newLayout, boxLayout));
 				});
 	
-				//self.layout.splice(0, self.layout.length, ...newLayout);
-				self.layout = newLayout;
+				self.updateLayout(newLayout); // self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
 			});
 
 			box.$on('dragEnd', function(evt)
@@ -376,7 +377,7 @@ Vue.component('dnd-grid-container',
 					newLayout.push(dnd_moveToFreePlace(newLayout, boxPosition));
 				});
 
-				self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
+				self.updateLayout(newLayout); // self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
 
 				self.dragging.boxLayout = null;
 				self.dragging.offset.x = 0;
@@ -434,7 +435,7 @@ Vue.component('dnd-grid-container',
 					newLayout.push(dnd_moveToFreePlace(newLayout, boxLayout));
 				});
 
-				self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
+				self.updateLayout(newLayout); // self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
 			});
 
 			box.$on('resizeEnd', function(evt)
@@ -467,7 +468,7 @@ Vue.component('dnd-grid-container',
 					newLayout.push(dnd_moveToFreePlace(newLayout, boxPosition));
 				});
 
-				self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
+				self.updateLayout(newLayout); // self.layout = newLayout; //self.layout.splice(0, self.layout.length, ...newLayout);
 
 				self.resizing.boxLayout = null;
 				self.resizing.offset.x = 0;
