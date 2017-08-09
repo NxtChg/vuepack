@@ -78,4 +78,5 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
  - [vue-clickaway](https://github.com/simplesmiler/vue-clickaway) - Clickaway directive: detects clicks outside of the element.
  - [vue-avatar](https://github.com/eliep/vue-avatar) - An avatar component that displays user initials or an image.
  - [vue-initials-img](https://github.com/diegomanjarres/vue-initials-img) - Similar to vue-avatar but renders an image using canvas instead.
+ - [vue-fullscreen](https://github.com/mirari/vue-fullscreen) - Fullscreen mode support.
  - [vue-social-sharing](https://github.com/nicolasbeauvais/vue-social-sharing) - A component for sharing links on social networks.
