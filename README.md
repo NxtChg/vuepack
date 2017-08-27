@@ -80,3 +80,4 @@ A list of Vue components you can pick here: [http://vuepack.org](http://vuepack.
  - [vue-initials-img](https://github.com/diegomanjarres/vue-initials-img) - Similar to vue-avatar but renders an image using canvas instead.
  - [vue-fullscreen](https://github.com/mirari/vue-fullscreen) - Fullscreen mode support.
  - [vue-social-sharing](https://github.com/nicolasbeauvais/vue-social-sharing) - A component for sharing links on social networks.
+ - [vue-qrcode-component](https://github.com/gerardreches/vue-qrcode-component) - A component to display QR codes.
